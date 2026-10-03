@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:payment_gateway/animation/align_animation.dart';
+import 'package:payment_gateway/animation/animated_padding_screen.dart';
+import 'package:payment_gateway/animation/animation_screen.dart';
+import 'package:payment_gateway/animation/opacity_screen.dart';
+import 'package:payment_gateway/animation/testanimationcontainer.dart';
 import 'package:payment_gateway/screens/epay_screen.dart';
 
 void main() {
@@ -13,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const EpayScreen(),
+      home: AnimatedPaddingScreen(),
     );
   }
 }
